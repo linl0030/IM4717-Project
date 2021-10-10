@@ -1,0 +1,235 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box}
+
+body {
+	font-family: Montserrat, sans-serif; 
+	margin:0;
+}
+
+.mySlides {
+	display: none}
+
+img {
+	vertical-align: middle;}
+
+
+.header {
+	width: 100%;
+	height: 120px;
+	display: block;
+	background-color: white;
+	min-width: 950px;
+}
+
+.inner-header{
+	width: 80%;
+	height: 100%;
+	display: block;
+	margin: 0 auto;
+}
+
+.logo-container{
+	height: 70%;
+	display: table;
+	margin: auto;
+}
+
+.logo-container h1{
+	color: black;
+	height: 100%;
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 32px;
+	font-family: 'Montserrat';
+}
+
+.nav-user-center{
+	display: table-cell;
+	padding-right: 0px;
+	vertical-align: middle;
+}
+
+hr{
+	width: 80%;
+	margin: auto;
+	min-width: 950px;
+}
+
+.icon{
+	display: table-cell;
+	float: right;
+	width: 30px;
+	height: 20px;
+	padding-right: 10px;
+	vertical-align: middle;
+}
+
+/* need to figure out a way to center nav-bar content*/
+
+.nav-bar{
+	height: 30%;
+	width: 100%;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+}
+
+.navigation{
+	margin: auto;
+	display: flex;
+	justify-content: center;
+
+}
+
+.navigation a{
+	height: 100%;
+	display: inline-block;
+	float: left;
+	padding: 0px 10px;
+}
+
+.navigation a li:hover{
+	color: grey;
+}
+
+.navigation a li{
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+	color: black;
+	font-family: 'Montserrat' ;
+	font-size: 14px;
+}
+
+.navigation a:last-child{
+	padding-left:40px;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+  /*max-width: 1000px;*/
+  width: 80%;
+  height: 30%;
+  position: relative;
+  margin: auto;
+  clear: both;
+}
+.mySlides{
+	min-width: 1000px;
+}
+
+/* The dots/bullets/indicators */
+.dot-bar{
+	margin: 20px 0 20px 0;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.section-title{
+	text-align: center;
+	color: #555;
+	line-height: 60px;
+	position: relative;
+	margin: 0 auto 20px;
+	min-width: 100px;
+}
+
+.section-title::after{
+	content: "";
+	background: #555;
+	width: 80px;
+	height: 5px;
+	border-radius: 5px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.categories, .products{
+	width: 80%;
+	display: flex;
+	margin: auto;
+}
+
+.row{
+	display: flex;
+	align-items: center;
+	flex: wrap;
+	justify-content: space-around;
+}
+
+.col-3{
+	flex-basis: 30%;
+	min-width: 250px;
+	padding: 10px;
+	margin-bottom: 50px;
+	transition: transform 0.5s;
+}
+
+.col-3 img{
+	width: 100%;
+	margin: 20px 0 20px 0;
+}
+
+.col-4{
+	flex-basis: 25%;
+	min-width: 200px;
+	padding: 10px;
+	margin-bottom: 50px;
+	transition: transform 0.5s;
+
+}
+
+.col-4 img{
+	width: 100%;
+	margin: 15px 0 15px 0;
+}
+
+.col-4:hover{
+	transform: translateY(-5px);
+}
+
+footer{
+	clear: both;
+	text-align: center;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
