@@ -13,7 +13,7 @@ The website allows users to navigate through products across categories with dif
 
 Total will be 6 categories of products sold on Hoffice, each category will have 3-5 products for demo purpose. Products information are all credited to IKEA.com.
 🖼 IMG converter (webp to jpg) https://ezgif.com/webp-to-jpg
-📝 Pic naming for later use: three-digit-convention e.g.123.jpg : category 1, product 2 from category 1, 3rd size/color for product 1.
+📝 Pic naming for later use: three-digit-convention with 1-indexing e.g.prod-123.jpg : category 1, product 2 from category 1, 3rd size/color for product 1.
 
 Total will be 6 categories of products sold on Hoffice, each category will have 3-5 products for demo purpose. Products information are all credited to IKEA.com.
 
@@ -21,8 +21,8 @@ Total 10 pages including one home page:
 1. ✅ Homepage - LX
 2. 🔵 Product detail page - ZK - In progress
 3. 🔵 About Us - LX - In progress
-4. Login/Signup
-5. Product Listing
+4. 🔵 Product Listing - LX
+5. Login/Signup
 6. Carts
 7. Setting
 8. Order Summary
