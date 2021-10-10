@@ -20,8 +20,8 @@ Total will be 6 categories of products sold on Hoffice, each category will have 
 Total 10 pages including one home page:
 1. ✅ Homepage - LX
 2. 🔵 Product detail page - ZK - In progress
-3. 🔵 About Us - LX - In progress
-4. 🔵 Product Listing - LX
+3. ✅ About Us - LX - In progress ❗️Personal stories can be updated if time permits
+4. 🔶 Product Listing - LX ❗️Image hunting going on
 5. Login/Signup
 6. Carts
 7. Setting
