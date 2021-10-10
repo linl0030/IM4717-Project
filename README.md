@@ -7,15 +7,15 @@ This project aims to create an online shopping website for a design brand HOFFIC
 The website allows users to navigate through products across categories with different levels of detail and fulfill a purchase journey with a series of activities including add to cart, make an order and view order history.
 
 
-📄 Project report first half has been added to this repo as well.
-🔗 Link to wireframes on Figma https://www.figma.com/file/eFQMgAvvnjf63jz7cyVybs/4717-Project?node-id=1%3A8
-🔗 Link to working folder on google drive https://drive.google.com/drive/folders/1WwNqOnmlhoDF6MGN02Jg6vBxJLV1MI05
+📄 Project report first half has been added to this repo as well.<br>
+🔗 Link to wireframes on Figma https://www.figma.com/file/eFQMgAvvnjf63jz7cyVybs/4717-Project?node-id=1%3A8 <br>
+🔗 Link to working folder on google drive https://drive.google.com/drive/folders/1WwNqOnmlhoDF6MGN02Jg6vBxJLV1MI05 <br>
 
-Total will be 6 categories of products sold on Hoffice, each category will have 3-5 products for demo purpose. Products information are all credited to IKEA.com.
-🖼 IMG converter (webp to jpg) https://ezgif.com/webp-to-jpg
-📝 Pic naming for later use: three-digit-convention with 1-indexing e.g.prod-123.jpg : category 1, product 2 from category 1, 3rd size/color for product 1.
+Total will be 6 categories of products sold on Hoffice, each category will have 3-5 products for demo purpose. Products information are all credited to IKEA.com.<br>
+🖼 IMG converter (webp to jpg) https://ezgif.com/webp-to-jpg <br>
+📝 Pic naming for later use: three-digit-convention with 1-indexing e.g.prod-123.jpg : category 1, product 2 from category 1, 3rd size/color for product 1. <br>
 
-Total will be 6 categories of products sold on Hoffice, each category will have 3-5 products for demo purpose. Products information are all credited to IKEA.com.
+🙎‍♀️🙍‍♂️ Portrait photos from https://thispersondoesnotexist.com/ <br>
 
 Total 10 pages including one home page:
 1. ✅ Homepage - LX
