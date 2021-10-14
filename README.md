@@ -3,7 +3,7 @@
 HOFFICE - F37 G01
 
 Since the start of COVID, a large number of employees have worked remotely to minimise contact. The popularity of remote work does not die away as we recover from the pandemic but has grown to be a new normal as COVID has posed a profound impact on our daily lives. It urges the demand to transform rooms at home into a working place.
-This project aims to create an online shopping website for a design brand HOFFICEwhich designs home office furniture and necessities. HOFFICE’s goal is to improve people's remote work experience by providing both comfortable and nicely designed products.
+This project aims to create an online shopping website for a design brand HOFFICE which designs home office furniture and necessities. HOFFICE’s goal is to improve people's remote work experience by providing both comfortable and nicely designed products.
 The website allows users to navigate through products across categories with different levels of detail and fulfill a purchase journey with a series of activities including add to cart, make an order and view order history.
 
 
