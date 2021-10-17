@@ -300,6 +300,25 @@ footer{
 	font-weight: 300;
 }
 
+.detail-grid{
+	margin-right: 40%;
+	margin-left: 5%;
+}
+
+.detail-grid img{
+	width: 100%;
+	padding: 10px;
+	border-radius: 15px;
+}
+
+.detail-Description{
+	width: 100%;
+}
+
+.detail-Description hr{
+	margin: 10px 0 10px 0;
+}
+
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
