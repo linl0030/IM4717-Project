@@ -229,6 +229,7 @@ hr{
 }
 
 footer{
+	background: #f1f0f0;
 	clear: both;
 	text-align: center;
 }
@@ -299,6 +300,8 @@ footer{
 	font-size: 30px;
 	font-weight: 300;
 }
+
+
 
 @keyframes fade {
   from {opacity: .4} 
