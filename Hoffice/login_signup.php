@@ -36,7 +36,7 @@
 
 				</ul>
 				<div class = "nav-user-center">
-					<a href="login.php"><img class = "icon" src="picture/user.png"></a>
+					<a href="login_signup.php"><img class = "icon" src="picture/user.png"></a>
 					<a href=""><img class = "icon" src="picture/online-shopping.png"></a>
 					<a href=""><img class = "icon" src="picture/search.png"></a>
 				</div>

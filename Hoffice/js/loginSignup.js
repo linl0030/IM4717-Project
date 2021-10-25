@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			if (e.target.id === "signupEmail" && !regexpEmail.test(e.target.value)){
 				setInputError(inputElement, "Please enter a correct email address");
 			}
-			if (e.target.id === "signupPassword" && e.target.value.length < 8){
+			if (e.target.id === "signupPassword" && e.target.value.length > 0  && e.target.value.length < 8){
 				setInputError(inputElement, "Password must be at least 8 characters, please re-enter");
 			}
 			if (e.target.id === "signupConfirm"){
