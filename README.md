@@ -22,7 +22,7 @@ Total 10 pages including one home page:
 2. 🔵 Product detail page - ZK - In progress
 3. ✅ About Us - LX - In progress ❗️Personal stories can be updated if time permits
 4. 🔶 Product Listing - LX ❗️Image hunting going on
-5. 🔵 Login/Signup - LX
+5. ✅  Login/Signup - LX
 6. 🔵 Carts - LX
 7. Setting
 8. Order Summary
