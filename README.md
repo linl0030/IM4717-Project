@@ -18,15 +18,15 @@ Total will be 6 categories of products sold on Hoffice, each category will have 
 🙎‍♀️🙍‍♂️ Portrait photos from https://thispersondoesnotexist.com/ <br>
 
 Total 10 pages including one home page:
-1. ✅ Homepage - LX
-2. 🔵 Product detail page - ZK - In progress
-3. ✅ About Us - LX - In progress ❗️Personal stories can be updated if time permits
-4. 🔶 Product Listing - LX ❗️Image hunting going on
-5. ✅  Login/Signup - LX
-6. 🔵 Carts - LX
-7. Setting
-8. Order Summary
-9. Order History
+1. ✅ Homepage[fixed items display] - LX
+2. 🔶 Product detail page[data retrieve from database] - ZK - In progress
+3. ✅ About Us[fixed items display] - LX - In progress ❗️Personal stories can be updated if time permits
+4. 🔶 Product Listing[fixed items display] - LX ❗️Image hunting going on
+5. ✅ Login/Signup[form data transactions with database] - LX
+6. 🔵 Carts[data retrieve from database] - LX
+7. 🔵 Setting [fixed items display] - ZK
+8. 🔵 Order Summary [data retrieve from database] - ZK
+9. 🔵 Order History [data retrieve from database] - ZK
 10. Make Payment - optional - need to confirm with prof
 
 
