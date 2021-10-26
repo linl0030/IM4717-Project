@@ -1,0 +1,57 @@
+.orderHis-main{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.record{
+    width: 1200px;
+    height: 150px;
+    background: #e3e3e3;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.name{
+    margin-left: 10%;
+    margin-right: 30px;
+    padding: 10px 6px 10px 0;
+    float: left;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+.price{
+    margin-left: 25%;
+    padding: 15px 0;
+    font-size: 20px;
+    text-align: left;
+}
+.date{
+    margin-left: 80%;
+    padding: 10px 6px 10px 0;
+    font-size: 20px;
+    text-align: left;
+}
+.address{
+    margin-left: 10%;
+    font-size: 20px;
+    text-align: left;
+    float: left;
+}
+.status{
+    margin-left: 80%;
+    font-size: 20px;
+    text-align: left;
+}
+
+.item{
+    margin-left: 50px;
+    margin-top: 15px;
+    width: 120px;
+    height: 120px;
+    float: left;
+    border-radius: 15px;
+    border: 7px solid #a9a3a3;
+}

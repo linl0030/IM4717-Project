@@ -1,0 +1,149 @@
+.orderSum-main{
+    width: 70%;
+    height: 2000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.orderAdd{
+    width: 1000px;
+    height: 250px;
+    background: #d0cfcf;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+.orderAdd h2{
+    margin-left: 10%;
+    padding: 10px 6px 10px 0;
+    font-size: 30px;
+    text-align: left;
+    font-weight: bold;
+}
+
+#conAdd{
+    text-align: right;
+    float: right;
+    margin-top: 40px;
+    margin-right: 45px;
+    width: 20px;
+    height: 20px;
+}
+
+#changeAddress {
+    border: 2px solid #cfcfd1;
+    border-radius: 6px;
+    color: black;
+    background-color: #cfcfd1;
+    padding: 5px 15px;
+    font-size: 16px;
+    margin-top: 6%;
+    margin-right: 10%;
+    transition-duration: 0.4s;
+    float: right;
+}
+
+#changeAddress:hover {
+    color: white;
+    background-color: #64646b;
+    border: 2px solid #64646b;
+}
+
+.items{
+    width: 1000px;
+    height: 250px;
+    background: #c9c9c9;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.selectItem{
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin-top: 110px;
+    margin-left: 50px;
+}
+
+.itemImg{
+    margin-left: 30px;
+    margin-top: 32px;
+    width: 180px;
+    height: 180px;
+    float: left;
+    border-radius: 15px;
+    border: 7px solid white;
+}
+
+.itemName{
+    margin-left: 5%;
+    margin-top: 20px;
+    padding: 10px 6px 10px 0;
+    float: left;
+    font-size: 30px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.itemQty{
+    border: 4px solid #9f9898;
+    border-radius: 6px;
+    color: black;
+    background-color: white;
+    padding: 8px 20px;
+    font-size: 16px;
+    margin-top: 6%;
+    margin-right: 55%;
+    width: 100px;
+    height: 40px;
+    float: right;
+}
+
+.itemPrice{
+    margin-right: 20%;
+    margin-top: 10px;
+    padding: 15px 0;
+    font-size: 30px;
+    text-align: left;
+    float: right;
+}
+
+.editOrder {
+    border: 2px solid #cfcfd1;
+    border-radius: 6px;
+    color: black;
+    background-color: #cfcfd1;
+    padding: 5px 15px;
+    font-size: 16px;
+    margin-top: 3%;
+    margin-right: 10%;
+    transition-duration: 0.4s;
+    float: right;
+}
+
+.editOrder:hover {
+    color: white;
+    background-color: #0085cc;
+    border: 2px solid #0085cc;
+}
+
+.summary{
+    width: 1000px;
+    height: 100px;
+    background: #7f7f7f;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.summary h3{
+    margin-left: 10%;
+    margin-top: 20px;
+    padding: 10px 6px 10px 0;
+    float: left;
+    font-size: 30px;
+    text-align: left;
+    font-weight: bold;
+}

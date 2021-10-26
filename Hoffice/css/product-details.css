@@ -2,7 +2,7 @@
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
+    margin-top: 50px;
     height: 650px;
 }
 .detail-grid{
@@ -23,7 +23,7 @@
     max-width: 100%;
     padding: 10px;
     border-radius: 15px;
-    max-height: 300px;
+    max-height: 500px;
 }
 
 .detail-description{
@@ -38,11 +38,17 @@
     margin-top: 30px;
     margin-bottom: 30px;
     border: 1px solid #d8d6d6;
-    min-width:450px !important
+    min-width:100% !important;
+    text-align: left;
 }
 
 .detail-description h2{
     margin-bottom: 10px;
+    color: #555;
+    line-height: 60px;
+    position: relative;
+    margin: 0 auto 20px;
+    min-width: 100px;
 }
 
 .choice-btn{
