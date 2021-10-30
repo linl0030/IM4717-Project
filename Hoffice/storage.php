@@ -20,35 +20,9 @@
 <script type="text/javascript" src="js/mainSlide.js" ></script>
 </head>
 
-<body>
-
-	<div class="header">
-		<div class="inner-header">
-
-			<div class = "logo-container">
-				<h1><a href="index.html">HO<span>FFICE</span></a></h1>
-			</div>
-
- 			<div class="nav-bar">
-				<ul class="navigation">
-					<a href="furniture.php"><li>Furniture</li></a>
-					<a href="home-electronics.php"><li>Home Electronics</li></a>
-					<a href="lightening.php"><li>Lightening</li></a>
-					<a href="organizer.php"><li>Organizer</li></a>
-					<a href="storage.php"><li>Storage</li></a>
-					<a href="stationary.php"><li>Stationary</li></a>
-					<a href="aboutus.html"><li>About Us</li></a>
-
-				</ul>
-				<div class = "nav-user-center">
-					<a href="login_signup.php"><img class = "icon" src="picture/user.png"></a>
-					<a href=""><img class = "icon" src="picture/online-shopping.png"></a>
-					<a href=""><img class = "icon" src="picture/search.png"></a>
-				</div>
-			</div>
-		</div>
-		
-	</div>
+<?php
+	include_once("header.php");
+?>
 
 	<hr>
 	<br>
@@ -86,11 +60,6 @@
 	<br>
 	<br>
 
-	<footer>
-		<small><i>Copyright &copy; 2014 JavaJam Coffee House<br>
-		<a href="mailto:lixian@lin.com">lixian@lin.com</a>
-		</i></small>
-	</footer>
-
-</body>
-</html>
+<?php
+	include_once("footer.php");
+?>
