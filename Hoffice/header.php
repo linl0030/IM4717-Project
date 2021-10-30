@@ -51,20 +51,22 @@
 							// $result=$conn->query($query);
 							// $username=$result->fetch_assoc();
 							echo "<a href='settings.php'> Hi, ".$_SESSION['valid_user']."</a>";
+							echo "<a href='cart.php'><img class = 'icon' src='picture/online-shopping.png'></a>";
 						}else{
 							echo "<a href='login_signup.php'><img class = 'icon' src='picture/user.png'></a>";
-						}
-
-						if(isset($_SESSION['userid'])){
-							include "connect.php";
-							$query = 'select username from user '
-								 ."where userid='$userid' ";
-							$result=$conn->query($query);
-							$username=$result->fetch_assoc();
-							echo "<a href='cart.html'><img class = 'icon' src='picture/online-shopping.png'>";
-						}else{
 							echo "<a href='login_signup.php'><img class = 'icon' src='picture/online-shopping.png'></a>";
 						}
+
+						// if(isset($_SESSION['userid'])){
+						// 	include "connect.php";
+						// 	$query = 'select username from user '
+						// 		 ."where userid='$userid' ";
+						// 	$result=$conn->query($query);
+						// 	$username=$result->fetch_assoc();
+						// 	echo "<a href='cart.html'><img class = 'icon' src='picture/online-shopping.png'>";
+						// }else{
+						// 	echo "<a href='login_signup.php'><img class = 'icon' src='picture/online-shopping.png'></a>";
+						// }
 					?>
 					<!-- <a href=""><img class = "icon" src="picture/online-shopping.png"></a> -->
 					<!-- <a href=""><img class = "icon" src="picture/search.png"></a> -->

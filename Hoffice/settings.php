@@ -82,6 +82,12 @@
             </div>
             <button class="editBtn" id="sendFeedbackbtn">Send </button>
         </div>
+        <div id="feedback" class="info">
+            <form action="logout.php" method="post"> 
+            <button class="editBtn" type="submit">Log Out </button>
+            </form>
+        </div>
+
 
     </div>
 </div>
