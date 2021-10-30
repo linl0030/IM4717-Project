@@ -29,6 +29,15 @@ Total 10 pages including one home page:
 9. ✅ Order History [data retrieve from database] - ZK
 10. Make Payment - optional - need to confirm with prof
 
+Connect to back end:
+1. ✅ Product Listing[fetch from database according to category] - LX
+2. ✅ Session
+  + Login/Signup[form data transactions with database] - LX
+  + Profile/signout [fixed items display] - LX
+3. Product detail page[data retrieve from database] - ZK
+4. Carts/orders[data retrieve from database] - LX 
+
+
 
 
 
