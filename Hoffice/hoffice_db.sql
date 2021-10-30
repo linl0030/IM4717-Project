@@ -3,7 +3,7 @@ use f32ee;
 create table if not exists image (
 	img_id int unsigned not null auto_increment primary key,
 	p_id int unsigned not null,
-	img_dir char(20));
+	img_dir char(30));
 
 create table if not exists user (
 	u_id int unsigned not null auto_increment primary key,
