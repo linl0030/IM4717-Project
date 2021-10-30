@@ -21,7 +21,7 @@ Total 10 pages including one home page:
 1. ✅ Homepage[fixed items display] - LX
 2. ✅ Product detail page[data retrieve from database] - ZK - In progress
 3. ✅ About Us[fixed items display] - LX - In progress ❗️Personal stories can be updated if time permits
-4. ✅ Product Listing[fixed items display] - LX ❗️Image hunting going on
+4. ✅ Product Listing[fetch from database according to category] - LX ❗️Image hunting going on
 5. ✅ Login/Signup[form data transactions with database] - LX
 6. ✅ Carts[data retrieve from database] - LX
 7. ✅ Setting [fixed items display] - ZK
