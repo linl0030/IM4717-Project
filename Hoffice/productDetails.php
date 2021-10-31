@@ -9,65 +9,10 @@ $query = "SELECT f32ee.product.p_id, f32ee.product.p_name, f32ee.product.p_price
 //$result = $conn->query($query);
 //$num_result = $result->num_rows;
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset=“utf-8”>
-    <title><?php echo get_name($row); ?></title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/product-details.css">
-    <script type="text/javascript" src="js/mainSlide.js"></script>
-    <script type="text/javascript" src="js/openDetail.js"></script>
-</head>
-<body>
-<body>
-
-<div class="header">
-    <div class="inner-header">
-
-        <div class="logo-container">
-            <h1><a href="index.html">HO<span>FFICE</span></a></h1>
-        </div>
-
-        <div class="nav-bar">
-            <ul class="navigation">
-                <a href="furniture.html">
-                    <li>Furniture</li>
-                </a>
-                <a href="home-electronics.html">
-                    <li>Home Electronics</li>
-                </a>
-                <a href="lightening.html">
-                    <li>Lightening</li>
-                </a>
-                <a href="organizer.html">
-                    <li>Organizer</li>
-                </a>
-                <a href="storage.html">
-                    <li>Storage</li>
-                </a>
-                <a href="stationary.html">
-                    <li>Stationary</li>
-                </a>
-                <a href="aboutus.html">
-                    <li>About Us</li>
-                </a>
-
-            </ul>
-            <div class="nav-user-center">
-                <a href="login_signup.php"><img class="icon" src="picture/user.png"></a>
-                <a href=""><img class="icon" src="picture/online-shopping.png"></a>
-                <a href=""><img class="icon" src="picture/search.png"></a>
-            </div>
-        </div>
-    </div>
-
-</div>
-
+<?php
+include_once("header.php");
+?>
+<link rel="stylesheet" href="css/product-details.css">
 
 <hr>
 <br>
@@ -132,13 +77,13 @@ $query = "SELECT f32ee.product.p_id, f32ee.product.p_name, f32ee.product.p_price
             <tr>
                 <?php
                 for ($i = 0; $i < $num_result; $i++) {
-                    $row = $cat_result->fetch_assoc();
+                $row = $cat_result->fetch_assoc();
                 ?>
                 <td onclick="submit(this)">
                     <img class="product-img" src="<?php echo $row['img_dir']; ?>">
-<!--                    <h4>--><?php //echo $row['p_name']; ?><!--</h4>-->
-<!--                    <small>--><?php //echo $row['p_sht_desc']; ?><!--</small>-->
-<!--                    <h4>$--><?php //echo $row['p_price']; ?><!--</h4>-->
+                    <!--                    <h4>--><?php //echo $row['p_name']; ?><!--</h4>-->
+                    <!--                    <small>--><?php //echo $row['p_sht_desc']; ?><!--</small>-->
+                    <!--                    <h4>$--><?php //echo $row['p_price']; ?><!--</h4>-->
                 <td>
                     <?php
                     }
@@ -170,11 +115,9 @@ $query = "SELECT f32ee.product.p_id, f32ee.product.p_name, f32ee.product.p_price
     </div>
 </div>
 
-<footer>
-    <small><i>Copyright &copy; HOFFICE 2021<br>
-            <a href="mailto:lixian@lin.com">lixian@lin.com</a>
-        </i></small>
-</footer>
+<?php
+include_once("footer.php");
+?>
 
 </body>
 </html>

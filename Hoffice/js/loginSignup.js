@@ -53,8 +53,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	document.querySelectorAll(".form-input").forEach(inputElement => {
 		inputElement.addEventListener("blur", e => {
-			if (e.target.id === "signupUsername" && e.target.value.length > 0  && e.target.value.length < 5) {
-				setInputError(inputElement, "Username must be at least 10 characters in length");
+			if (e.target.id === "signupUsername" && e.target.value.length > 0  && e.target.value.length < 3) {
+				setInputError(inputElement, "Username must be at least 3 characters in length");
 			}
 			if (e.target.id === "signupEmail" && !regexpEmail.test(e.target.value)){
 				setInputError(inputElement, "Please enter a correct email address");

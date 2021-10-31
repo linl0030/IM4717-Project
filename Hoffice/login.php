@@ -1,38 +1,35 @@
 <?php
+	include "connect.php";
+	session_start();
+	if (isset($_POST['submit'])) {
+		if (empty($_POST['loginUsername']) || empty ($_POST['loginPassword'])) {
+		echo "All records to be filled in"; //make sure all required entries are filled
+		exit;}
+	}
+
+	$username = $_POST['loginUsername'];
+	$password = $_POST['loginPassword'];
 	
-	$conn = mysqli_connect("localhost", "f32ee", "f32ee","f32ee");
-
-	if (!$conn) {
-		die("Connection failed: " . mysqli_connect_error());
+	// echo ("$username" . "<br />". "$password" . "<br />");
+	//md5 means it's going to encrypt the password
+	$password = md5($password);
+	$query = 'select * from f32ee.user '
+				."where username='$username' "
+				." and u_password='$password'";
+	// echo "<br>" .$query. "<br>";
+	
+	$result = $conn->query($query);
+	// echo "<br>" .$result->num_rows. "<br>";
+	if ($result->num_rows >0)
+	{
+		// if they are in the database register the user id
+		$_SESSION['valid_user'] = $username; 
+		// echo "success";   
 	}
-
-	$javaPriceUpdate = $_GET['javaPriceUpdate'];
-	$laitSinglePriceUpdate = $_GET['laitSinglePriceUpdate'];
-	$laitSDoublePriceUpdate = $_GET['laitDoublePriceUpdate'];
-	$icedCappuccinoSinglePriceUpdate = $_GET['icedCappuccinoSinglePriceUpdate'];
-	$icedCappuccinoDoublePriceUpdate = $_GET['icedCappuccinoDoublePriceUpdate'];
-
-	for($i = 1; $i < 6; $i++) {
-		if ($i == 1 && isset($javaPriceUpdate)) {
-			//UPDATE menu SET price = 2.00 WHERE productID = 1;
-			$sql = "UPDATE f32ee.menu SET price = $javaPriceUpdate WHERE productID =$i";
-			$result = $conn->query($sql);
-		}elseif ($i == 2 && isset($laitSinglePriceUpdate)) {
-			$sql = "UPDATE f32ee.menu SET price = $laitSinglePriceUpdate WHERE productID =$i";
-			$result = $conn->query($sql);
-		}elseif ($i == 3 && isset($laitSDoublePriceUpdate)) {
-			$sql = "UPDATE f32ee.menu SET price = $laitSDoublePriceUpdate WHERE productID =$i";
-			$result = $conn->query($sql);
-		}elseif ($i == 4 && isset($icedCappuccinoSinglePriceUpdate)) {
-			$sql = "UPDATE f32ee.menu SET price = $icedCappuccinoSinglePriceUpdate WHERE productID =$i";
-			$result = $conn->query($sql);
-		}elseif ($i == 5 && isset($icedCappuccinoDoublePriceUpdate)) {
-			$sql = "UPDATE f32ee.menu SET price = $icedCappuccinoDoublePriceUpdate WHERE productID =$i";
-			$result = $conn->query($sql);
-		}
-	}
-
 	mysqli_close($conn);
-	header("refresh:0;url=admin.php");
+	// // header("refresh:0;url=index.html");
+	header("location:index.php");
 
+	
 ?> 
+
