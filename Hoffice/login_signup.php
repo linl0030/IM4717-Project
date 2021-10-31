@@ -1,12 +1,13 @@
 <?php
 	include_once("header.php");
 ?>
+    <link rel="stylesheet" type="text/css" href="css/login-signup.css">
 	<hr>
 
 	<div class="form">
 		<div class="login-signup-box">
 		<form class="form" id="login" method="post" action="login.php">
-			<h1 class="form-title"> Login</h1>
+			<h1 class="form-title">Login</h1>
 			<div class="form-message form-message-error"></div>
 			
 			<div class="form-input-group">

@@ -18,3 +18,14 @@ function changeColor($num){
     document.getElementById("changeColor").submit();
 }
 
+function addCart(){
+    const curPath = document.getElementById("mainImg").src;
+    const finalPath = curPath.split("Hoffice/")[1];
+    const qty = document.getElementById("quantity").value;
+    document.getElementById("addCartQty").setAttribute("value", qty);
+    document.getElementById("addCartProd").setAttribute("value", finalPath);
+    document.getElementById("add2Cart").submit();
+    console.log(qty);
+    console.log(finalPath);
+}
+

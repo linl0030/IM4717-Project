@@ -1,6 +1,7 @@
 <?php
 	include_once("header.php");
 ?>
+    <link rel="stylesheet" href="css/orderHistory.css">
 
 <hr>
 <br>

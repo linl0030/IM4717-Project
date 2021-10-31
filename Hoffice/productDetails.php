@@ -1,15 +1,6 @@
 <?php
 include_once('fetchDetails.php');
 include_once('connect.php');
-$query = "SELECT f32ee.product.p_id, f32ee.product.p_name, f32ee.product.p_price, f32ee.product.p_sht_desc, f32ee.image.img_id,f32ee.image.img_dir 
-	FROM f32ee.product
-	INNER JOIN image ON f32ee.product.p_id=f32ee.image.p_id
-	WHERE f32ee.image.img_id like '1%0'";
-// $query="SELECT * from f32ee.product";
-//$result = $conn->query($query);
-//$num_result = $result->num_rows;
-?>
-<?php
 include_once("header.php");
 ?>
 <link rel="stylesheet" href="css/product-details.css">
@@ -31,6 +22,10 @@ include_once("header.php");
     <form id="changeColor" action="productDetails.php" method="post">
         <input type="hidden" id="color" name="color" value="">
     </form>
+    <form id="add2Cart" action="prod2cart.php" method="post">
+        <input type="hidden" id="addCartQty" name="addCartQty" value="">
+        <input type="hidden" id="addCartProd" name="addCartProd" value="">
+    </form>
     <div class="detail-description">
         <h2><?php echo get_name($row); ?><br><?php echo get_price($row); ?></h2>
         <h5><?php echo get_shtDes($row); ?></h5>
@@ -49,17 +44,11 @@ include_once("header.php");
                     <?php
                     }
                     ?>
-                    <!--                <td>-->
-                    <!--                    <button class="choice-btn">Color 2</button>-->
-                    <!--                </td>-->
-                    <!--                <td>-->
-                    <!--                    <button class="choice-btn">Color 3</button>-->
-                    <!--                </td>-->
             </tr>
         </table>
         <hr/>
-        <input type="number" id="quantity" min="1"></input>
-        <button class="add2Cart-btn">Add to cart</button>
+        <input type="number" id="quantity" min="1" value="1">
+        <button class="add2Cart-btn" onclick="addCart()">Add to cart</button>
     </div>
 </div>
 

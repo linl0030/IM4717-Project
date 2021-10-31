@@ -1,45 +1,6 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-<title>About HOFFICE</title>
-<meta charset=“utf-8”>
-<link rel="stylesheet" href="css/style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
-<script type="text/javascript" src="js/mainSlide.js" ></script>
-</head>
-
-<body>
-
-	<div class="header">
-		<div class="inner-header">
-
-			<div class = "logo-container">
-				<h1><a href="index.html">HO<span>FFICE</span></a></h1>
-			</div>
-
- 			<div class="nav-bar">
-				<ul class="navigation">
-					<a href="products.html"><li>Furniture</li></a>
-					<a href="products.html"><li>Home Electronics</li></a>
-					<a href="products.html"><li>Lightening</li></a>
-					<a href="products.html"><li>Organizer</li></a>
-					<a href="products.html"><li>Storage</li></a>
-					<a href="products.html"><li>Stationary</li></a>
-					<a href="aboutus.html"><li>About Us</li></a>
-
-				</ul>
-				<div class = "nav-user-center">
-					<a href="login_signup.php"><img class = "icon" src="picture/user.png"></a>
-					<a href=""><img class = "icon" src="picture/online-shopping.png"></a>
-					<a href=""><img class = "icon" src="picture/search.png"></a>
-				</div>
-			</div>
-		</div>
-		
-	</div>
+<?php
+include_once("header.php");
+?>
 
 	<hr>
 	<br>
@@ -80,11 +41,9 @@
 		<p> &#10075; Make every cozy home a wonderful work place! &#10076;</p>
 	</div>
 
-	<footer>
-		<small><i>Copyright &copy; 2014 JavaJam Coffee House<br>
-		<a href="mailto:lixian@lin.com">lixian@lin.com</a>
-		</i></small>
-	</footer>
+<?php
+include_once("footer.php");
+?>
 
 </body>
 </html>

@@ -1,17 +1,23 @@
 <?php
-    include_once("header.php");
+include('connect.php');
 ?>
 
-<hr>
-<br>
+<?php
+include_once("header.php");
+?>
+    <link rel="stylesheet" href="css/orderHistory.css">
+    <link rel="stylesheet" href="css/orderSummary.css">
+    <link rel="stylesheet" href="css/settings.css">
+    <hr>
+    <br>
 
-<div class="section-title">
-    <h2>Order Summary</h2>
-</div>
+    <div class="section-title">
+        <h2>Order Summary</h2>
+    </div>
 
-<div class="orderSum-main">
+    <div class="orderSum-main">
     <div class="orderAdd">
-        <h2>Manage Address</h2>
+        <h2>Address</h2>
         <div class="address" style="float: left">
             <input type="radio" id="conAdd" name="conAdd">
             <div class="addName" id='addName0'>May</div>
@@ -22,24 +28,45 @@
     </div>
 
     <div class="orderItems">
-        <div class="items" id="item1">
-            <input type="radio" class="selectItem" id="selectItem1" name="selectItem1">
-            <img class="itemImg" src="picture/prod-110.jpg">
-            <div class="itemName" id="itemName1" name="itemName1">Table Stand</div>
-            <div class="itemPrice" id="itemPrice1" name="itemPrice1">$60</div>
-            <input type="number" class="itemQty" id="itemQty1" name="itemQty1">
-        </div>
+    <?php
+    for ($i = 0; $i < count($_SESSION['itemList']); $i++) {
+        $_SESSION['qty'][$i] = $_POST["order" . $i];
+        $curSrc = $_SESSION['itemList'][$i];
+        $query = "SELECT *
+            FROM f32ee.product
+	        INNER JOIN image ON f32ee.product.p_id=f32ee.image.p_id
+	        WHERE f32ee.image.img_dir = '" . $curSrc . "'";
+        $result = $conn->query($query);
+        $row = $result->fetch_assoc();
+    ?>
+    <div class="items" id="item1">
+<!--        <input type="radio" class="selectItem" id="selectItem1" name="selectItem1">-->
+        <img class="itemImg" src="<?php echo $row['img_dir']; ?>">
+        <div class="itemName" id="itemName1" name="itemName1"><?php echo $row['p_name']; ?></div>
+        <div class="itemPrice" id="itemPrice1" name="itemPrice1">$<?php echo $row['p_price'] * $_SESSION['qty'][$i]; ?></div>
+        <input type="number" class="itemQty" id="itemQty1" name="itemQty1" readonly value="<?php echo $_SESSION['qty'][$i] ?>">
+    </div>
+        <?php
+    }
+    ?>
     </div>
 
     <div class="orderSummary">
         <div class="summary" id="sum" name="sum">
-            <h3>Total: </h3>
-            <button class="editOrder" id="delete" name="delete">Delete</button>
-            <button class="editOrder" id="proceed" name="proceed">Add to cart</button>
+            <h3 id = "total"><script>
+                    var  total = 0;
+                    const prodSummary = document.getElementsByClassName("items");
+                    for(var i = 0; i < prodSummary.length; i++){
+                        total += parseInt(prodSummary[i].innerHTML.split("$")[1], 10);
+                    }
+                    document.getElementById("total").innerHTML = "Total:  $" + parseFloat(total * (1 + 0.07)).toFixed(2);
+                </script></h3>
+            <button class="editOrder" id="edit" name="edit" onclick="history.back()">Edit</button>
+            <button class="editOrder" id="proceed" name="proceed">Proceed</button>
         </div>
     </div>
-</div>
+    </div>
 
-<?php
+    <?php
     include_once("footer.php");
-?>
+    ?>
