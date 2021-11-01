@@ -21,6 +21,7 @@ session_start();
     <script type="text/javascript" src="js/loginSignup.js"></script>
     <script type="text/javascript" src="js/settings.js"></script>
     <script type="text/javascript" src="js/openDetail.js"></script>
+    <script type="text/javascript" src="js/orderSummary.js"></script>
 </head>
 
 <body>

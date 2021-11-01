@@ -24,7 +24,7 @@ include_once("header.php");
             <div class="addPhone" id='addPhone0'>87654321</div>
             <div class="addDetail" id='addDetail0'>20 Nanyang Avenue 654876</div>
         </div>
-        <button id="changeAddress">Change</button>
+        <button id="changeAddress" onclick="editAdd()">Change</button>
     </div>
 
     <div class="orderItems">
@@ -39,12 +39,12 @@ include_once("header.php");
         $result = $conn->query($query);
         $row = $result->fetch_assoc();
     ?>
-    <div class="items" id="item1">
+    <div class="items" id="item<?php echo $i ?>">
 <!--        <input type="radio" class="selectItem" id="selectItem1" name="selectItem1">-->
         <img class="itemImg" src="<?php echo $row['img_dir']; ?>">
-        <div class="itemName" id="itemName1" name="itemName1"><?php echo $row['p_name']; ?></div>
-        <div class="itemPrice" id="itemPrice1" name="itemPrice1">$<?php echo $row['p_price'] * $_SESSION['qty'][$i]; ?></div>
-        <input type="number" class="itemQty" id="itemQty1" name="itemQty1" readonly value="<?php echo $_SESSION['qty'][$i] ?>">
+        <div class="itemName" id="itemName<?php echo $i ?>" name="itemName1"><?php echo $row['p_name']; ?></div>
+        <div class="itemPrice" id="itemPrice<?php echo $i ?>" name="itemPrice1">$<?php echo $row['p_price'] * $_SESSION['qty'][$i]; ?></div>
+        <input type="number" class="itemQty" id="itemQty<?php echo $i ?>" name="itemQty1" readonly value="<?php echo $_SESSION['qty'][$i] ?>">
     </div>
         <?php
     }
@@ -59,13 +59,16 @@ include_once("header.php");
                     for(var i = 0; i < prodSummary.length; i++){
                         total += parseInt(prodSummary[i].innerHTML.split("$")[1], 10);
                     }
-                    document.getElementById("total").innerHTML = "Total:  $" + parseFloat(total * (1 + 0.07)).toFixed(2);
+                    document.getElementById("total").innerHTML = "Total:  $" + parseFloat(total * (1 + 0.07)).toFixed(2) + "(" + parseFloat(total).toFixed(2)
+                        + " + " + parseFloat(total * 0.07).toFixed(2) + ")";
                 </script></h3>
             <button class="editOrder" id="edit" name="edit" onclick="history.back()">Edit</button>
-            <button class="editOrder" id="proceed" name="proceed">Proceed</button>
+            <button class="editOrder" id="proceed" name="proceed" onclick="proceed()">Proceed</button>
         </div>
     </div>
     </div>
+    <form id="clearCart" action="clearCart.php" method="post">
+    </form>
 
     <?php
     include_once("footer.php");
