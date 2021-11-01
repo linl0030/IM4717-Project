@@ -90,9 +90,6 @@ insert into image values
 	(640,64,'picture/prod-640.jpg'),
 	(641,64,'picture/prod-641.jpg');
 
-insert into user values
-	(0,'test','test','test@e.ntu.edu.sg');
-
 insert into cartItem values
 	(0,0,11,1),
 	(1,0,21,1),
@@ -133,20 +130,20 @@ INSERT INTO product values
 (14,'LÅNGFJÄLL',199,'Office chair, Gunnared dark grey/white','The gently curved lines accentuated by sewn details are kind to your body and pleasant to look at. Also, there’s a tilt and height-adjusting mechanism that’s built to outlast years of ups and downs.'),
 (21,'KOPPLA',25.9,'6-way socket with switch, white1.5 m','6 sockets feed energy to electrical supplies and the switch turns everything off so no money is wasted in standby mode. KOPPLA series supports your electrical needs and gives you power where you need it.'),
 (22,'SYMFONISK',179,'WiFi bookshelf speaker, white','Place the speaker horizontally or vertically, or mount it on the wall to use as a practical shelf. Also helps you to use your space optimally, while providing a rich sound that fills the entire room.'),
-(23, 'VINDRIKTNING', 16.9, 'Air quality sensor', 'Do you want to know more about the air you breath in your home? Check the air quality based on particles (PM2.5) with this stylish and easy-to-use sensor – perfect to combine with FÖRNUFTIG air purifier.'),
+(23,'VINDRIKTNING', 16.9, 'Air quality sensor', 'Do you want to know more about the air you breath in your home? Check the air quality based on particles (PM2.5) with this stylish and easy-to-use sensor – perfect to combine with FÖRNUFTIG air purifier.'),
 (31,'TERTIAL',14.9,'Work lamp, dark grey','TERTIAL work lamp was introduced in our range in 1998. The classic, steel design with adjustable arm and head makes it a perfect choice if you are looking for a flexible and effective reading light.'),
 (32,'FORSÅ',29.9,'Work lamp, nickel-plated','Classic style work lamp in steel that will brighten up your day. The arm and shade are adjustable which makes it a great lamp for reading by the desk, bed or sofa.'),
 (33,'HEKTAR',99,'Work lamp with wireless charging, dark grey',	'The simple, oversized metal shape is inspired by old lamps from places like factories and theatres. Used together, HEKTAR lamps support different activities and create a unified, rustic look in the room.'),
 (34,'BAROMETER',49.9,'Work lamp, brass-colour',	'Brass-coloured work lamp in metal that shines from head to toe. A perfect choice for those who like a classic style and want to be able to direct the light where they like when working or reading.'),
-(41,'NOJIG',1.5,'Organiser, plastic/white20x25x10 cm','This slightly taller plastic box helps you make the best use of space on shelves and in drawers. Use one or several and combine different sizes to create a solution that suits your things.'),
+(41,'NOJIG',1.5,'Organiser, plastic 20x25x10 cm','This slightly taller plastic box helps you make the best use of space on shelves and in drawers. Use one or several and combine different sizes to create a solution that suits your things.'),
 (42,'SKÅDIS',35,'Pegboard, white76x56 cm','Great next to your carpenter''s bench but serves just as well in the bathroom, entrance or office, keeping smaller items close at hand. Add SKÅDIS accessories to create the best storage for your needs.'),
-(43,'TJENA',4.9,'Magazine file, white Price/pieces $2.45','Important papers and children''s drawings not organised? With a magazine file, things get organised quickly. Choose a colour you like and keep it, or let the creativity flow and create your own design.'),
-(44,'TJOG',	7.9, 'Storage box with lid, dark grey25x36x15 cm','In this box you can organise everything from paper and games to clothing accessories. A metal label holder and a textile-like surface make the box just as practical and durable as decorative.'),
-(51,'GALANT',299,	'Cabinet with doors, white stained oak veneer80x120 cm','10 year guarantee. Read about the terms in the guarantee brochure.'),
-(52,'IDÅSEN',349,	'Cabinet with doors and drawers, beige80x47x119 cm','Use the robust IDÅSEN cabinet to store plenty of work things close to your workspace – while ROTHULT smart lock keeps papers and other items safe. Goes perfectly with other furniture in the IDÅSEN series.'),
-(53,'BEKANT',379,	'Storage unit on castors, mesh white61x101 cm','Roll it to wherever you need it. You can also use it as a reception desk thanks to the generous work surface. Durable and steady with a quality that will last for many years.'),
-(54,'GALANT',1398,	'Storage combination w sliding doors, white320x120 cm','Binders, folders, papers – an office can easily get cluttered if everything is visible. With storage behind sliding doors, you can easily reach everything while enjoying a calmer environment to work in.'),
-(61,'TOTEBO',4.9,	'Drawing pin, pink/gold-colour','Steel, Copper-plated'),
-(62,'SKRUTT',3.9,	'Desk pad, white65x45 cm','EVA plastic, Polyethylene plastic'),
-(63,'REJSA',4.9,	'Box, grey-green/metal9x17x7.5 cm','This small, durable metal storage box is reminiscent of storage from industries of the past. Now, just like then, the large opening makes it easy to find what you are looking for.'),
-(64,'RISSLA',59,	'Desk pad, black','This desk pad offers a smooth and elegant surface for working and protects your desk from dirt and scratches. The weight and the bent front edge keep the pad firmly in place.');
+(43,'TJENA',4.9,'Magazine file, $2.45','Important papers and children''s drawings not organised? With a magazine file, things get organised quickly. Choose a colour you like and keep it, or let the creativity flow and create your own design.'),
+(44,'TJOG',	7.9, 'Storage box with lid, 25x36x15 cm','In this box you can organise everything from paper and games to clothing accessories. A metal label holder and a textile-like surface make the box just as practical and durable as decorative.'),
+(51,'GALANT',299,'Cabinet with doors, 80x120 cm','10 year guarantee. Read about the terms in the guarantee brochure.'),
+(52,'IDÅSEN',349,'Cabinet with doors and drawers, beige80x47x119 cm','Use the robust IDÅSEN cabinet to store plenty of work things close to your workspace – while ROTHULT smart lock keeps papers and other items safe. Goes perfectly with other furniture in the IDÅSEN series.'),
+(53,'BEKANT',379,'Storage unit on castors, mesh 61x101 cm','Roll it to wherever you need it. You can also use it as a reception desk thanks to the generous work surface. Durable and steady with a quality that will last for many years.'),
+(54,'GALANT',1398,'Storage combination w sliding doors, white320x120 cm','Binders, folders, papers – an office can easily get cluttered if everything is visible. With storage behind sliding doors, you can easily reach everything while enjoying a calmer environment to work in.'),
+(61,'TOTEBO',4.9,'Drawing pin','Steel, Copper-plated'),
+(62,'SKRUTT',3.9,'Desk pad, 65x45 cm','EVA plastic, Polyethylene plastic'),
+(63,'REJSA',4.9,'Box, metal9x17x7.5 cm','This small, durable metal storage box is reminiscent of storage from industries of the past. Now, just like then, the large opening makes it easy to find what you are looking for.'),
+(64,'RISSLA',59,'Desk pad, black','This desk pad offers a smooth and elegant surface for working and protects your desk from dirt and scratches. The weight and the bent front edge keep the pad firmly in place.');
