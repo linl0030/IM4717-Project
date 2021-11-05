@@ -58,6 +58,6 @@ function pay(){
     document.getElementById("edit").innerHTML = "Edit";
     document.getElementById("edit").onclick = history.back;
     document.getElementById("clearCart").submit();
-    // window.location.assign("/f32ee/IM4717-Project/Hoffice");
+    window.location.assign("/f32ee/IM4717-Project/Hoffice");
     window.alert("Congratulation! You have made your order!");
 }

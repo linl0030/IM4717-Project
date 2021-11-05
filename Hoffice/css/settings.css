@@ -30,6 +30,7 @@
 #content {
     margin-left: 500px;
     width: 65%;
+    min-width: 735px;
     background: #f8f8f8;
     float: left;
 }
@@ -52,7 +53,8 @@
 .profileInfo h4{
     margin-left: 10%;
     margin-right: 30px;
-    width: 16%;
+    width: 20%;
+    min-width: 120px;
     padding: 10px 6px 10px 0;
     float: left;
     text-align: right;
@@ -165,13 +167,15 @@
 .password h4{
     margin-left: 10%;
     margin-right: 30px;
-    width: 16%;
+    width: 20%;
+    min-width: 135px;
     padding: 10px 6px 10px 0;
     float: left;
     text-align: right;
 }
 .passwordField{
     padding: 10px 6px 10px 0;
+    min-width: 665px;
 }
 
 #newFeedback{
